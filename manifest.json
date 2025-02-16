@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "BlurNegative",
+  "version": "1.0",
+  "description": "Blurs out the current webpage.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Blur Page",
+    "default_icon": {
+      "16": "icons/blur16.png",
+      "48": "icons/blur48.png",
+      "128": "icons/blur128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

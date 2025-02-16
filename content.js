@@ -1,0 +1,1 @@
+document.body.style.filter = "blur(8px)";
