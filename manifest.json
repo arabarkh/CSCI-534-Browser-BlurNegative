@@ -1,18 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "BlurNegative",
+  "name": "Blur Extension",
   "version": "1.0",
-  "description": "Blurs out the current webpage.",
+  "description": "Blur videos on all pages",
   "permissions": ["activeTab", "scripting"],
-  "action": {
-    "default_title": "Blur Page",
-    "default_icon": {
-      "16": "icons/blur16.png",
-      "48": "icons/blur48.png",
-      "128": "icons/blur128.png"
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["<all_urls>"]
     }
-  },
-  "background": {
-    "service_worker": "background.js"
-  }
+  ]
 }
